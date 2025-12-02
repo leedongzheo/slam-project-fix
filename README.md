@@ -1,6 +1,6 @@
 # Map Layer – Python GMapping for TurtleBot3
 
-This step provides a **from-scratch Python reimplementation of GMapping** that lives in the [`map_layer`](./map_layer/) folder. It replaces the dependency on the C++ `openslam_gmapping` tree while keeping the same workflow used in the previous steps of the project: TurtleBot3 simulation in Gazebo (step 1), RGB-D capture and preprocessing (steps 2–3), and map visualization in RViz.
+This step provides a **from-scratch Python reimplementation of GMapping** that lives in the [`map_layer`](./map_layer/) folder. It bases on the dependency on the C++ `openslam_gmapping` tree while keeping the same workflow used in the previous steps of the project: TurtleBot3 simulation in Gazebo (step 1), RGB-D capture and preprocessing (steps 2–3), and map visualization in RViz.
 
 - The `map_layer` package contains modular building blocks (motion model, sensor model, occupancy grid, particle filter, resampler) plus a ROS 2 node that publishes `/map` and `/gmapping_particles` from `/scan` and TF.
 - See [`map_layer/README.md`](./map_layer/README.md) for detailed build instructions, algorithm explanation, and a demo recipe on TurtleBot3 with ROS 2 Jazzy and Gazebo Harmonic.
