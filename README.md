@@ -1,6 +1,6 @@
 # Map Layer – Python GMapping for TurtleBot3
 
-This step provides a **from-scratch Python reimplementation of GMapping** that lives in the [`map_layer`](./map_layer/) folder.It is written based on the dependency on the C++ `openslam_gmapping`.
+This step provides a **from-scratch Python reimplementation of GMapping** that lives in the [`map_layer`](./map_layer/) folder. It is written based on the dependency on the C++ `openslam_gmapping`.
 - The `map_layer` package contains modular building blocks (motion model, sensor model, occupancy grid, particle filter, resampler) plus a ROS 2 node that publishes `/map` and `/gmapping_particles` from `/scan` and TF.
 - See [`map_layer/README.md`](./map_layer/README.md) for detailed build instructions, algorithm explanation, and a demo recipe on TurtleBot3 with ROS 2 Jazzy and Gazebo Harmonic.
   
@@ -144,7 +144,8 @@ Open RViz2 and configure:
 Drive the robot to build the map:
 
 ```bash
-ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
 -----
