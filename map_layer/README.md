@@ -61,6 +61,4 @@ source install/setup.bash
 - Laser parameters such as `max_range`, `z_hit`, and `sigma_hit` inside `sensor_model.py` help balance hit confidence vs. random measurements.
 - Motion noise parameters `alpha1..alpha4` should reflect your odometry quality; start small for simulated robots.
 
-## Notes on differences from `openslam_gmapping`
-- This implementation is intentionally compact and Pythonic for readability and education; it omits advanced optimizations (scan matching, entropy-based resampling triggers) from the original C++ project.
-- Map publication happens at scan rate; if you prefer throttling, wrap the `_publish_map` call with a timer or message counter.
+
